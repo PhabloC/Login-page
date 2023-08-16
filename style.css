@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url("/img/WhatsApp\ Image\ 2023-08-15\ at\ 23.37.27.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0;
+  opacity: 10;
+}
+
+.container {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 30px rgba(1, 1, 1, 1);
+  width: 100%;
+  max-width: 800px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  margin: 0 0 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px;
+}
+
+.div-login {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  flex: 1;
+}
+
+.div-register {
+  background: rgba(43, 40, 40, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  flex: 1;
+}
+
+.div-register > * {
+  margin-bottom: 11vh;
+}
+
+.div-login,
+.div-register {
+  flex: 1;
+  padding: 15px;
+  height: 75vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-user {
+  position: relative;
+  margin: 15px 0;
+}
+
+.div-login .box-user label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box-user input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.box-user label {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 15px;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.box-user input:focus ~ label,
+.box-user input:valid ~ label {
+  top: -30px;
+  font-size: 10px;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.forgot-password a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.forgot-password a:hover {
+  color: #03e9f4;
+  transition: 0.5s;
+}
+
+.btn-enter,
+.btn-register {
+  border-radius: 20px;
+  border: 1px solid #0c2d48;
+  background-color: #145da0;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+
+.btn-enter:hover {
+  background: #03e9f4;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.btn-register:hover {
+  background: #03e9f4;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.btn-enter {
+  border-color: #ffffff;
+  background-color: transparent;
+}
+
+.btn-register {
+  border-color: #ffffff;
+  background-color: transparent;
+}
+
+.campo-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.campo-social > div {
+  margin: 0 10px;
+}
+
+.campo-social img {
+  max-width: 20px;
+}
+
+.campo-social-google {
+  cursor: pointer;
+}
+
+.campo-social-facebook {
+  cursor: pointer;
+}
+
+.campo-social-linkedlin {
+  cursor: pointer;
+}
+
+.campo-social-google:hover {
+  background: #db4a39;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #db4a39, 0 0 25px #db4a39, 0 0 50px #db4a39,
+    0 0 100px #db4a39;
+}
+
+.campo-social-facebook:hover {
+  background: #3b5998;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #3b5998, 0 0 25px #3b5998, 0 0 50px #3b5998,
+    0 0 100px #3b5998;
+}
+
+.campo-social-linkedlin:hover {
+  background: #3b5998;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #3b5998, 0 0 25px #3b5998, 0 0 50px #3b5998,
+    0 0 100px #3b5998;
+}
+
+/* Terminar de arrumar a parte do login e a senha de acordo com o modelo e ajeitar o recuperar senha
+tambem acrescentar mais detalhes e as opções de login */

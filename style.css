@@ -216,7 +216,7 @@ p {
 
 .campo-social-google:hover {
   background: #db4a39;
-  border-radius: 50%;
+  border-radius: 2px;
   box-shadow: 0 0 10px #db4a39, 0 0 25px #db4a39, 0 0 50px #db4a39,
     0 0 100px #db4a39;
 }

@@ -217,8 +217,12 @@ p {
 .campo-social-google:hover {
   background: #db4a39;
   border-radius: 2px;
-  box-shadow: 0 0 10px #db4a39, 0 0 25px #db4a39, 0 0 50px #db4a39,
-    0 0 100px #db4a39;
+ /*  box-shadow: 0 0 10px #db4a39, 0 0 25px #db4a39, 0 0 50px #db4a39,
+    0 0 100px #db4a39; */
+  filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+          drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+          drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
+                          
 }
 
 .campo-social-facebook:hover {

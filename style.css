@@ -235,5 +235,41 @@ p {
     0 0 100px #3b5998;
 }
 
-/* Terminar de arrumar a parte do login e a senha de acordo com o modelo e ajeitar o recuperar senha
-tambem acrescentar mais detalhes e as opções de login */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .div-login,
+  .div-register {
+    padding: 30px;
+  }
+
+  .div-login {
+    flex: 2;
+  }
+
+  .div-register {
+    flex: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .div-login,
+  .div-register {
+    padding: 15px;
+    height: auto;
+  }
+}

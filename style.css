@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("/img/mar-fundo.jpeg");
+  background-image: url("./img/mar-fundo.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -219,6 +219,9 @@ p {
   border-radius: 50px;
   box-shadow: 0 0 10px #db4a39, 0 0 25px #db4a39, 0 0 50px #db4a39,
     0 0 100px #db4a39;
+  /* filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+          drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+          drop-shadow(5px 5px 5px rgba(0,0,0,0.2)); */
 }
 
 .campo-social-facebook:hover {
@@ -235,41 +238,5 @@ p {
     0 0 100px #3b5998;
 }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  .container {
-    flex-direction: row;
-  }
-
-  .div-login,
-  .div-register {
-    padding: 30px;
-  }
-
-  .div-login {
-    flex: 2;
-  }
-
-  .div-register {
-    flex: 2;
-  }
-}
-
-@media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .div-login,
-  .div-register {
-    padding: 15px;
-    height: auto;
-  }
-}
+/* Terminar de arrumar a parte do login e a senha de acordo com o modelo e ajeitar o recuperar senha
+tambem acrescentar mais detalhes e as opções de login */
